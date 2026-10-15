@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Search English word definitions, pronunciation, examples and synonyms." />
+  <title>WordWise Dictionary | IT 110 Team Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="index.html" class="brand">Word<span>Wise</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#team">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="app-hero">
+    <div class="container">
+      <h1>WordWise</h1>
+      <p>Search a word to see its meaning, pronunciation, and more.</p>
+    </div>
+  </section>
+
+  <main class="app-main">
+    <div class="container">
+      <div class="app-card">
+
+        <!-- ================= SEARCH FORM =================
+             Using a <form> lets the Enter key submit automatically. -->
+        <form id="search-form" class="search-form" role="search" novalidate>
+          <label for="word-input" class="visually-hidden" style="position:absolute;left:-9999px;">Enter an English word</label>
+          <input type="search" id="word-input" placeholder="Type an English word, e.g. serendipity"
+                 autocomplete="off" autofocus />
+          <button type="submit" id="search-btn" class="btn">Search</button>
+        </form>
+        <p class="hint">Tip: press Enter to search. Click a synonym to look it up.</p>
+
+        <!-- Loading indicator (shown while fetching) -->
+        <div id="loading" class="loading" role="status" aria-live="polite">
+          <div class="spinner"></div>
+          <p>Searching...</p>
+        </div>
+
+        <!-- Error / info messages -->
+        <div id="message" class="message" role="alert"></div>
+
+        <!-- Results are inserted here by script.js -->
+        <section id="results" class="results" aria-live="polite" hidden></section>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>WordWise</strong> &middot; Dictionary Web Application &middot; IT 110 Midterm Project</p>
+      <p>Rhey Lawrience Jamili &middot; Chris Ryan Torregosa &middot; Lance Macalinao</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
