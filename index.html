@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WordWise, a Dictionary Web Application: IT 110 Midterm Project and team portfolio." />
+  <title>WordWise | IT 110 Team Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="index.html" class="brand">Word<span>Wise</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="app.html">Dictionary</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+      <div class="container">
+        <span class="badge fade-up">IT 110 Midterm Project &middot; Dictionary Web Application</span>
+        <h1 class="fade-up d1">Word<span>Wise</span></h1>
+        <p class="fade-up d2">
+          Look up English words in seconds. Our team built a simple, friendly dictionary
+          that shows definitions, pronunciation, examples, and synonyms.
+        </p>
+        <div class="hero-actions fade-up d3">
+          <!-- MAIN BUTTON: links to the dictionary application -->
+          <a href="app.html" class="btn">Launch Dictionary App</a>
+          <a href="#team" class="btn btn-outline">Meet the Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT OUR PROJECT ================= -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Our Project</h2>
+        <p class="section-sub">What our dictionary does and why we built it.</p>
+
+        <p class="about-text">
+          WordWise, our Dictionary Web Application, helps users search for English words and retrieve
+          their meanings quickly. It connects to the free Dictionary API, so every result
+          shown on the page comes from real data returned by the API.
+        </p>
+
+        <div class="features">
+          <article class="feature">
+            <h3>Search Any Word</h3>
+            <p>Type an English word and press Enter or click Search.</p>
+          </article>
+          <article class="feature">
+            <h3>Clear Definitions</h3>
+            <p>See the meanings of the word, organized neatly by definition.</p>
+          </article>
+          <article class="feature">
+            <h3>Pronunciation</h3>
+            <p>Phonetic spelling and audio are shown when the API provides them.</p>
+          </article>
+          <article class="feature">
+            <h3>Parts of Speech</h3>
+            <p>Noun, verb, adjective, and more, so you know how a word is used.</p>
+          </article>
+          <article class="feature">
+            <h3>Examples &amp; Synonyms</h3>
+            <p>Example sentences and similar words appear when available.</p>
+          </article>
+          <article class="feature">
+            <h3>Friendly Errors</h3>
+            <p>Helpful messages appear if a word is not found or the request fails.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM SECTION ================= -->
+    <section class="section" id="team">
+      <div class="container">
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="section-sub">Three students, three responsibilities, one project.</p>
+
+        <div class="team-grid">
+
+          <!-- ============ MEMBER 1 ============
+               HOW TO CHANGE THE PHOTO:
+               1. Put the picture inside the "images" folder.
+               2. Change the src below (currently "images/rhey.jpg") to your file name.
+               If the file is missing, the initials "RJ" are shown instead. -->
+          <article class="team-card">
+            <div class="avatar">
+              RJ
+              <img src="images/rhey.jpg" alt="Photo of Rhey Lawrience Jamili" />
+            </div>
+            <h3>Rhey Lawrience Jamili</h3>
+            <span class="role">HTML Structure &amp; Project Management</span>
+            <p>
+              Organizes the HTML structure, makes sure the markup is semantic and accessible,
+              and helps coordinate the project tasks and documentation.
+            </p>
+          </article>
+
+          <!-- ============ MEMBER 2 ============
+               PHOTO: change src="images/cris.jpg" to your file name.
+               Fallback initials: "CT". -->
+          <article class="team-card">
+            <div class="avatar">
+              CT
+              <img src="images/cris.jpg" alt="Photo of Chris Ryan Torregosa" />
+            </div>
+            <h3>Chris Ryan Torregosa</h3>
+            <span class="role">CSS Styling &amp; Layout</span>
+            <p>
+              Handles the visual design, responsive layouts, and styling so the website
+              looks good on phones, tablets, and desktop screens.
+            </p>
+          </article>
+
+          <!-- ============ MEMBER 3 ============
+               PHOTO: change src="images/lance.jpg" to your file name.
+               Fallback initials: "LM". -->
+          <article class="team-card">
+            <div class="avatar">
+              LM
+              <img src="images/lance.jpg" alt="Photo of Lance Macalinao" />
+            </div>
+            <h3>Lance Macalinao</h3>
+            <span class="role">JavaScript Logic &amp; API Integration</span>
+            <p>
+              Builds the JavaScript functionality, connects the dictionary API, processes
+              the responses, and displays word definitions dynamically.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="section cta">
+      <div class="container">
+        <h2 class="section-title">Ready to look up a word?</h2>
+        <p>Open our dictionary and try it out.</p>
+        <a href="app.html" class="btn">Explore Dictionary</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>WordWise</strong> &middot; Dictionary Web Application &middot; IT 110 Midterm Project</p>
+      <p>Rhey Lawrience Jamili &middot; Chris Ryan Torregosa &middot; Lance Macalinao</p>
+    </div>
+  </footer>
+
+  <!-- script.js hides broken team photos so the initials placeholder shows -->
+  <script src="script.js"></script>
+</body>
+</html>
